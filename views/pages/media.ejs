@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+    <script>
+    function sendData()
+    {
+        var answer=document.getElementById("userAnswer1").value
+        var answer2=document.getElementById("userAnswer2").value
+        alert("В первой строке введено: "+answer)
+        alert("Во второй строке: "+answer2)
+    }
+    </script>
+</head>
+<body>
+    <% include ../partials/nav.ejs %>
+    <div id="content">
+        <h1>Медиа</h1>
+        <% include ../partials/img_logo.ejs %>
+        <div id="box_text">
+           <p>MLG PRO:<br>
+              <a href="https://www.youtube.com/watch?v=x5xd-J3hE48">MLJACKIE CHAN</a>
+           </p> 
+        </div>
+    </div>
+    <% include ../partials/copyright.ejs %>
+</body>
+</html>
