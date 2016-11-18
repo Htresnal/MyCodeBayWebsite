@@ -1,0 +1,41 @@
+var express = require("express");
+var app = express();
+var router = express.Router();
+var path = __dirname + '/views/';
+
+router.use(function (req,res,next) {
+  console.log("/" + req.method);
+  next();
+});
+
+router.get("/",function(req,res){
+  res.sendFile(path + "index.html");
+});
+
+router.get("/index",function(req,res){
+  res.redirect('/');
+});
+
+router.get("/games",function(req,res){
+  res.sendFile(path + "games.html");
+});
+
+router.get("/media",function(req,res){
+  res.sendFile(path + "media.html");
+});
+
+router.get("/about",function(req,res){
+  res.sendFile(path + "about.html");
+});
+
+app.use("/",router);
+
+app.use("*",function(req,res){
+  res.sendFile(path + "404.html");
+});
+
+app.listen(80,function(){
+  console.log("Live at Port 3000");
+});
+
+module.exports = router;

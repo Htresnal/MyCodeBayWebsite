@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Мой сайт(GeekBrains)</title>
+   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+   <script src="javascripts/playsnd.js"></script>
+   <script type="text/javascript">
+   function show(object)
+   {
+       object.style.display = 'block';
+   return false;
+   }
+   function hide(object)
+   {
+       object.style.display = 'none';
+   return false;
+   }     
+   </script>
+   <audio id='mySound' src='sound/swed.mp3' type="audio/mpeg"></audio>
+</head>
+<body>
+    <div id="main">
+        <a href="index" class="link">Главная</a><span>/</span>
+        <a href="games" id="selected" class="link">Игры</a><span>/</span>
+        <a href="media" class="link">Медиа</a><span>/</span>
+        <a href="about" class="link">О сайте</a>
+    </div>
+    <div id="content">
+        <h1>Игры на Javascript</h1>
+        <img src="img/Tree-0.png" width="256" height="256" alt="Acacia из Windows 95">
+        <div id="box_text">
+               <div id="list">
+               <ul>
+                    <li><a class="game_text" href="#" onclick="hide(game_zone_riddles);show(game_zone_guess);return hide(game_zone_guessMultiplayer);">Угадай число</a></li>
+                    <li><a class="game_text" href="#" onclick="hide(game_zone_riddles);hide(game_zone_guess); return show(game_zone_guessMultiplayer);">Угадай число(2 игрока)</a></li>
+                    <li><a class="game_text" href="#" onclick="show(game_zone_riddles);hide(game_zone_guess);return hide(game_zone_guessMultiplayer);">Загадки</a></li>
+               </ul>
+               </div>
+            <hr><br>
+            <div style="display:none" id="game_zone_riddles">
+                <strong>Загадка №1</strong><br>
+                Какое колесо не крутится при правом развороте?<br><br>(Ответ должен быть кратким)<br>
+                <input type="text" id="riddle0"><br>
+            
+                <strong>Загадка №2</strong><br>
+                Что это такое: синий, большой, с рогами и полностью набит зайцами?<br><br>(Вид транспорта)<br>
+                <input type="text" id="riddle1"><br>
+                
+                <strong>Загадка №3</strong><br>
+                Что идет из города в город, но при этом не движется?<br><br>(Поверхность)<br>
+                <input type="text" id="riddle2"><br>
+                
+                <strong>Загадка №4</strong><br>
+                Среднее арифметическое между велосипедом и мотоциклом?<br><br>(5 букв)<br>
+                <input type="text" id="riddle3"><br><br>
+                <a id="button" href="#" onclick="return sendDataRiddles();">Ответить</a>
+                <br><br>
+                <p style="background-color: #dfdfdf" id="game_zone_riddles_Log"></p>
+            </div>
+        
+           <div style="display:none" id="game_zone_guess">
+                Добро пожаловать в игру <strong>"Угадай номер"</strong> Попытайтесь отгадать загаданную компьютером цифру. У вас 5 попыток.<br><br>Введите число от 0 до 100.<br>
+                <input type="text" id="userAnswerGuess"><br><br>
+                <a id="button" href="#" onclick="return game_Guess();">Ответить</a>
+                <br><br>
+                <p style="background-color: #dfdfdf" id="game_zone_guess_Log"></p>
+            </div>
+        
+           <div style="display:none" id="game_zone_guessMultiplayer">
+               Добро пожаловать в игру <strong>"Угадай номер"</strong> для двух игроков.<br>Каждый игрок, поочерёдно, будет пытаться отгадать цифру. Каждому игроку даны 5 попыток. Если угадать не получилось, то будет объявлен проигрыш.<br><br>Введите число от 0 до 100.<br>
+                <input type="text" id="userAnswerGuessMultiplayer"><br><br>
+                <a id="button" href="#" onclick="return game_GuessMultiplayer();">Ответить</a>
+               <br><br>
+                <p style="background-color: #dfdfdf" id="game_zone_guessMultiplayer_Log"></p>
+            </div>
+           </div>
+    </div>
+    <div id="copyright">Copyright 2016<img src="img/snoop.gif" title="BLAZE IT!" height=20 width=20 alt="BLAZE IT!"><a href="#" onclick="return PlaySound('mySound')">©</a></div>
+    <script src="javascripts/games.js"></script>
+</body>
+</html>
