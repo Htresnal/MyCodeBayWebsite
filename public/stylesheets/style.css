@@ -161,17 +161,21 @@ body
 {
     width: 517px;
     height: 510px;
-    background-image: url("");
+    background:transparent;
     background-size: 510px 510px;
     background-repeat: no-repeat;
 }
 
-#illu_box .illu_span{
+#illu_box:hover
+{
+    background-image: url("../img/illuminati.png");
+}
+
+#illu_box .illu_text{
     font-size:22px;
 }
 
-#illu_box:hover{ background-image: url("img/illuminati.png"); }
-#illu_box:hover .illu_span{ display:none; }
+#illu_box:hover .illu_text{ display:none; }
 
 #content #box_text > p {
     color: #242424;
