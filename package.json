@@ -1,9 +1,13 @@
 {
-  "name" : "BasicSite",
+  "name" : "MyCodeBayWebsite",
   "version" : "0.0.1",
+  "description" : "My coding blog website",
+  "main": "app.js",
   "scripts" : {
     "start" : "node ./bin/www"
   },
+  "author" : "Htresnal",
+  "license" : "MIT",
   "dependencies" : {
     "express" : "latest"
   }
