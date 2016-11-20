@@ -17,16 +17,16 @@ app.get('/index', function(request, response) {
   response.redirect('/');
 });
 
-app.get('/about', function(request, response) {
-  response.render('pages/about');
+app.get('/articles', function(request, response) {
+  response.render('pages/articles');
 });
 
-app.get('/games', function(request, response) {
-  response.render('pages/games');
+app.get('/programs', function(request, response) {
+  response.render('pages/programs');
 });
 
-app.get('/media', function(request, response) {
-  response.render('pages/media');
+app.get('/links', function(request, response) {
+  response.render('pages/links');
 });
 
 app.listen(app.get('port'), function() {

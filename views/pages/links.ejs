@@ -1,73 +1,46 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-   <% include ../partials/header.ejs %>
-   <script type="text/javascript">
-   function show(object)
-   {
-       object.style.display = 'block';
-   return false;
-   }
-   function hide(object)
-   {
-       object.style.display = 'none';
-   return false;
-   }     
-   </script>
+<% include ../partials/header.ejs %>
 </head>
 <body>
-    <% include ../partials/nav.ejs %>
-    <div id="content">
-        <h1>Игры на Javascript</h1>
-        <% include ../partials/img_logo.ejs %>
-        <div id="box_text">
-               <div id="list">
-               <ul>
-                    <li><a class="game_text" href="#" onclick="hide(game_zone_riddles);show(game_zone_guess);return hide(game_zone_guessMultiplayer);">Угадай число</a></li>
-                    <li><a class="game_text" href="#" onclick="hide(game_zone_riddles);hide(game_zone_guess); return show(game_zone_guessMultiplayer);">Угадай число(2 игрока)</a></li>
-                    <li><a class="game_text" href="#" onclick="show(game_zone_riddles);hide(game_zone_guess);return hide(game_zone_guessMultiplayer);">Загадки</a></li>
-               </ul>
-               </div>
-            <hr><br>
-            <div style="display:none" id="game_zone_riddles">
-                <strong>Загадка №1</strong><br>
-                Какое колесо не крутится при правом развороте?<br><br>(Ответ должен быть кратким)<br>
-                <input type="text" id="riddle0"><br>
-            
-                <strong>Загадка №2</strong><br>
-                Что это такое: синий, большой, с рогами и полностью набит зайцами?<br><br>(Вид транспорта)<br>
-                <input type="text" id="riddle1"><br>
-                
-                <strong>Загадка №3</strong><br>
-                Что идет из города в город, но при этом не движется?<br><br>(Поверхность)<br>
-                <input type="text" id="riddle2"><br>
-                
-                <strong>Загадка №4</strong><br>
-                Среднее арифметическое между велосипедом и мотоциклом?<br><br>(5 букв)<br>
-                <input type="text" id="riddle3"><br><br>
-                <a id="button" href="#" onclick="return sendDataRiddles();">Ответить</a>
-                <br><br>
-                <p style="background-color: #dfdfdf" id="game_zone_riddles_Log"></p>
+    <div id="wrapper">
+        <div id="main">
+            <% include ../partials/banner.ejs %>
+            <% include ../partials/nav.ejs %>
+            <div id="content">
+                <h1>My links</h1>
+                <div id="box_text">
+                    <h2>C++ related links:</h2>
+                    <p><a href="https://www.youtube.com/user/CppCon">CppCon Youtube Channel</a><br><br>
+                        
+                    <a href="https://www.youtube.com/user/CppCon">CppCon Youtube Channel</a><br><br>
+                    
+                    <strong>Links in russian:</strong><br>
+                    <a href="http://web.archive.org/web/20160709230445/http://rsdn.ru/">RSDN.ru(Down since June 2016. Web.Archive mirror)</a><br><br>
+                    
+                    <a href="http://forum.sources.ru/index.php?showforum=2">Sources.ru</a><br><br>
+
+                    <a href="http://forum.vingrad.ru/forum/s/f7863b7c1a08a8df8bdd14a092075041/C++C.html">VINGRAD</a><br><br>
+                        
+                    <a href="http://forum.vingrad.ru/forum/s/f7863b7c1a08a8df8bdd14a092075041/C++C.html">VINGRAD</a><br><br>
+                        
+                    <a href="http://www.codeproject.com/Articles/19218/Some-of-the-Best-Open-Source-Project-s-in-VC-MFC">Good opensource programs to learn from</a><br><br>
+                       
+                    <a href="http://www.embedded.com/">Everything about embedded systems</a><br><br>
+                        
+                    <a href="http://forum.developing.ru/forumdisplay.php/25-C-%D0%B8-C?s=281bccb4bd235fa8ff16069a1c7bea5b">Developing.ru</a><br><br>
+                    
+                    <a href="http://www.programmersforum.ru/forumdisplay.php?s=4a1aefc8e7b1c58abcd2c81553386e40&f=14">Programmers club</a><br><br>
+                        
+                        
+                    </p>
+                    <h2>Java related links:</h2>
+                    <h2>Javascript related links:</h2>
+                </div>
             </div>
-        
-           <div style="display:none" id="game_zone_guess">
-                Добро пожаловать в игру <strong>"Угадай номер"</strong> Попытайтесь отгадать загаданную компьютером цифру. У вас 5 попыток.<br><br>Введите число от 0 до 100.<br>
-                <input type="text" id="userAnswerGuess"><br><br>
-                <a id="button" href="#" onclick="return game_Guess();">Ответить</a>
-                <br><br>
-                <p style="background-color: #dfdfdf" id="game_zone_guess_Log"></p>
-            </div>
-        
-           <div style="display:none" id="game_zone_guessMultiplayer">
-               Добро пожаловать в игру <strong>"Угадай номер"</strong> для двух игроков.<br>Каждый игрок, поочерёдно, будет пытаться отгадать цифру. Каждому игроку даны 5 попыток. Если угадать не получилось, то будет объявлен проигрыш.<br><br>Введите число от 0 до 100.<br>
-                <input type="text" id="userAnswerGuessMultiplayer"><br><br>
-                <a id="button" href="#" onclick="return game_GuessMultiplayer();">Ответить</a>
-               <br><br>
-                <p style="background-color: #dfdfdf" id="game_zone_guessMultiplayer_Log"></p>
-            </div>
-           </div>
+        </div>
+        <% include ../partials/copyright.ejs %>
     </div>
-    <% include ../partials/copyright.ejs %>
-    <script src="javascripts/games.js"></script>
 </body>
 </html>
