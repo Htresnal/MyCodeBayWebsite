@@ -1,15 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <% include ../partials/header.ejs %>
+<% include ../partials/header.ejs %>
 </head>
 <body>
-    <% include ../partials/nav.ejs %>
-    <div id="content">
-        <center><font size=80>404</font></center>
-        <% include ../partials/img_logo.ejs %>
-        <p>Sorry, nothing.</p>
+    <div id="wrapper">
+        <div id="main">
+            <% include ../partials/banner.ejs %>
+            <% include ../partials/nav.ejs %>
+            <div id="content">
+                <h1>ERROR <strong>404</strong></h1>
+                <div id="box_text">
+                    <h1>Sadly, we couldn't find the page you are asking for..</h1>
+                    <p>But on the bright side, its an adventure to find it out!<br>
+                    If you still insist that the page you're asking for, should exist - contact me at <a href="mailto:htresnal@gmail.com">htresnal@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+        <% include ../partials/copyright.ejs %>
     </div>
-    <% include ../partials/copyright.ejs %>
 </body>
 </html>
