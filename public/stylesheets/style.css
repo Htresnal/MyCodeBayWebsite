@@ -123,6 +123,54 @@ body
 
 /*</Articles content>*/
 
+/*<Program content>*/
+
+#program
+{
+    display:block;
+    padding 0 0 0 0;
+}
+
+#program #header
+{
+    margin: 0 auto;
+    line-height: 2em;
+    background: #333333;
+    color:azure;
+    padding: 0 0 0 2em;
+    font-size: 1.15em;
+}
+
+#program #img
+{
+    display:inline;
+    float: left;
+    padding: 0 0.75em 0.5em 0;
+}
+
+#program #description
+{
+    display: inline;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+#program #text
+{
+    clear: left;
+    font-size: 1.05em;
+}
+
+#program #reveal
+{
+    font-size: 1.05em;
+    font-weight: lighter;
+    text-align: right;
+}
+
+/*</Program content>*/
+
+
 #footer
 {
     background-color: darkgoldenrod;

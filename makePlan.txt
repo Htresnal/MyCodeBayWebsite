@@ -2,7 +2,10 @@ Global width: 802px;
 Global height: inf
 Global font size: 1em;
 
+
 Menu width 200px;
+
+Program thumbnail size: 280x160
 
 Footer:
 white, thin outline over words. As a background image of the footer - teal(bright greenish-blue) widen half-transparent circle(more to edges, less to center).
