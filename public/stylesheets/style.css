@@ -107,6 +107,7 @@ body
     font-size: 0.85em;
     font-weight: lighter;
     text-align: right;
+    font-style: italic;
 }
 
 #article #text
@@ -153,6 +154,7 @@ body
     display: inline;
     font-size: 0.85em;
     font-weight: normal;
+    font-style: italic;
 }
 
 #program #text
