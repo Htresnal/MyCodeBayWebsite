@@ -1,7 +1,7 @@
 MyCodeBay Website by Htresnal
 
 Platform: NodeJS
-Modules: Express
+Modules: Express, EJS
 
 Languages: Javascript, HTML, CSS.
 
