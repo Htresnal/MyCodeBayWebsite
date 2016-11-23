@@ -8,14 +8,22 @@
 
 a 
 {
-    color:#9B9A5B;
+    color:#506D7C;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover
+{
+    color:#8799ad;
+    text-decoration:underline;
 }
 
 body 
 {
   margin: 0;
   padding: 0;
-  background-color: #94CAE8;
+  background-color: #a2ddfc;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   color: #4b6775;
@@ -185,7 +193,7 @@ h2
 .program .description
 {
   display: inline;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: normal;
 }
 
@@ -201,6 +209,13 @@ h2
   font-size: 1.05em;
   font-weight: lighter;
   text-align: right;
+}
+
+.program .underline
+{
+    background:#54829B;
+    border:0;
+    height:5px;
 }
 
 /*</Program content>*/

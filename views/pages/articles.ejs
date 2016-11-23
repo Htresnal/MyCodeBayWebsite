@@ -23,15 +23,15 @@
                         That’s why I’ve made a lookup list of possible problems. I’ve also split it in categories, corresponding with hardware, software and CPU\bottleneck overload problems.</p>
                         <a href="#!" id="btn_reveal" onclick="showArticle(this)">SHOW FULL ARTICLE</a>
                         <div class="reveal">
-                            <p>    No matter what you are going to try - you can't teach an old dog new tricks. CPU bottlenecks are the main reason you would love to have the most new CPU model out there. But, sadly, even the new, the most powerful CPU is not always the best choice. Bottlenecks in CPU memory speed and size, RAM, Harddrive, Motherboard, faulty and unoptimized peripherals can cause more trouble, than the most genius CPU engineers can help you with, by providing few more hertz.<br />
+                            <p>    No matter what you are going to try - you can't teach an old dog new tricks. CPU bottlenecks are the main reason you would love to have the most new CPU model out there. But, sadly, even the new, the most powerful CPU is not always the best choice. Bottlenecks in CPU memory speed and size, RAM, Harddrive, Motherboard, faulty and unoptimized peripherals can cause more trouble, than the most genius CPU engineers can help you with, by providing few more hertz.<br /><br />
 
-                            Bad and dirty coding, poor engine structure decisions, code that ignores good and bad sides of the hardware, make companies produce a cannonade of patch releases, monthly or weekly. Sometimes - its an optimization that increases the performance, and then it could be a new technique, that will slow PC down, instead.<br />
+                            Bad and dirty coding, poor engine structure decisions, code that ignores good and bad sides of the hardware, make companies produce a cannonade of patch releases, monthly or weekly. Sometimes - its an optimization that increases the performance, and then it could be a new technique, that will slow PC down, instead.<br /><br />
 
-                            The real reasons are usually way more complex for us to simply point our fingers at. Sometimes, problem is fixed program side, driver side, OS side. Sometimes, its caused by hardware units not being able to work together, so the only way to fix that is to replace one of them.<br />
+                            The real reasons are usually way more complex for us to simply point our fingers at. Sometimes, problem is fixed program side, driver side, OS side. Sometimes, its caused by hardware units not being able to work together, so the only way to fix that is to replace one of them.<br /><br />
 
-                            Sometimes, you think you need the prettiest picture you can get, and what bottlenecks your system this time is videocard, but sometimes, CPU can be a part of it, too, when producing physics\particles and etc. Gladly, some games allow you to change certain engine numbers. If you're not a fan of particles, but you cannot stand a low quality textures - you can easily change it, sustaining the balance between a good looking, yet decently performing game.<br />
+                            Sometimes, you think you need the prettiest picture you can get, and what bottlenecks your system this time is videocard, but sometimes, CPU can be a part of it, too, when producing physics\particles and etc. Gladly, some games allow you to change certain engine numbers. If you're not a fan of particles, but you cannot stand a low quality textures - you can easily change it, sustaining the balance between a good looking, yet decently performing game.<br /><br />
 
-                            Shaders, shadows(or lighting), physics emulation and particles are 4 the most performance damaging settings you can find in a game\program. Textures and models are usually have a decent optimization.<br />
+                            Shaders, shadows(or lighting), physics emulation and particles are 4 the most performance damaging settings you can find in a game\program. Textures and models are usually have a decent optimization.<br /><br />
 
                             Another way to ruin performance with software is “Garbage hoarding”: agent programs, messengers, mailers, update checkers, some unknown antiviruses or “system boosters”.. not only they're harmful to your PC performance, they could easily be a great opportunity for viruses to get into your PC.</p>
                         </div>
@@ -45,48 +45,48 @@
                         <p>Posted at 15:37 20.11.16 by Htresnal</p>
                     </div>
                     <div class="text">
-                        <p>    - Sensitivity overcalculations - There are certain levels of calculations for your mouse move, before data reach the cursor:</p>
+                        <p>   Sensitivity overcalculations - There are certain levels of calculations for your mouse move, right before data reaches the cursor:<br /><br />
 
-                        <p>Mouse driver->Windows driver->Program\Game.</p>
+                        Mouse driver->Windows driver->Program\Game.<br /><br />
 
-                        <p>To reach the best mouse accuracy, you’d like to minimize the chain links involved in sending your mouse data to an application\system. Its not rare for a mouse driver to be poorly made, also keep in mind, that changing the mouse settings in Windows mouse driver or your original mouse driver is not the best practice. You would like to stick with 1x1 scale of movement to be translated to your application. When different level of scales add to each other, it causes miscalculations, producing movement skips.<br>
+                        To achieve best mouse accuracy, you’d like to minimize the chain links involved in sending your mouse data to an application\system. Its not rare for a mouse driver to be poorly made, also keep in mind, that changing the mouse settings in Windows mouse driver or your original mouse driver is not the best practice. You would like to stick with 1x1 scale of movement to be translated to your application. When different level of scales add to each other, it causes miscalculations, producing movement skips.<br /><br />
                         Installing additional programs to alter the mouse sensitivity, causing up to 4 sensitivity altering nodes to take part, may increase the move data corruption even further. To completely understand why is it bad, you can read about how USB information is transferred from mouse to PC, and then processed by it. Other “bonuses” of such bad usage of incoming mouse data may include jittering, input and system lag.</p>
                         <a href="#!" id="btn_reveal" onclick="showArticle(this)"><p>SHOW FULL ARTICLE</p></a>
                         <div class="reveal">
                             <p>Always choose to alter DPI instead of sensitivity. DPI is a hardware based mechanic, that actually increases the rate of data throughput, causing feeling of increased sensitivity.
-                            Technically, its nothing more than just an increased rate of the mice’s sensor camera.</p>
+                            Technically, its nothing more than just an increased rate of the mice’s sensor camera.<br /><br />
 
-                            <p>Mouse acceleration - This feature should only be enabled by the mouse driver, and not through the Windows mouse settings! Windows acceleration(aka "Enchance pointer precision") was dedicated for a low-DPI mice, to get jaggy cursor move smoother. Its no longer an issue for modern mice, thats why Enchance pointer precision shouldn't be never used for any purpose.</p>
+                            Mouse acceleration - This feature should only be enabled by the mouse driver, and not through the Windows mouse settings! Windows acceleration(aka "Enchance pointer precision") was dedicated for a low-DPI mice, to get jaggy cursor move smoother. Its no longer an issue for modern mice, thats why Enchance pointer precision shouldn't be never used for any purpose.<br /><br />
 
-                            <p>x64 system - Windows x64 is made to emulate x32(x86) programs. That could impact program's performance, so thats why you should reduce amount of x86 programs on your system to a minimum.</p>
+                            x64 system - Windows x64 is made to emulate x32(x86) programs. That could impact program's performance, so thats why you should reduce amount of x86 programs on your system to a minimum.<br /><br />
 
-                            <p>Dusty PC case – Dust won’t allow cool air to release PC component's heat. Any heat that condenses inside of your PC parts will affect your PC performance. Before you start any optimization on your PC, you better start with the simplest and the most effective - reach into the deeps of your PC case, and remove any pieces of dust with a cotton swabs, or carefully with a vacuum cleaner.</p>
+                            Dusty PC case – Dust won’t allow cool air to release PC component's heat. Any heat that condenses inside of your PC parts will affect your PC performance. Before you start any optimization on your PC, you better start with the simplest and the most effective - reach into the deeps of your PC case, and remove any pieces of dust with a cotton swabs, or carefully with a vacuum cleaner.<br /><br />
 
-                            <p>Viruses - Having no antivirus at all can drastically improve your PC performance, though its not recommended at all. Once viruses get to your computer, there are chances, that this performance boost will get reduced soon, or, even further, your personal data get unrecoverable.</p>
+                            Viruses - Having no antivirus at all can drastically improve your PC performance, though its not recommended at all. Once viruses get to your computer, there are chances, that this performance boost will get reduced soon, or, even further, your personal data get unrecoverable.<br /><br />
 
-                            <p>Antiviruses are CPU, Memory and HDD work power hungry, so, make sure you know how to temporarily disable it. Also, make sure, that there is no download manager programs, auto-updates or auto-defragmentation schedules are active. Try to remove all unknown, unused, NON-WINDOWS applications. Be careful about removing everything in sight. Googling the name of application could give you the reason its on your PC.</p>
+                            Antiviruses are CPU, Memory and HDD work power hungry, so, make sure you know how to temporarily disable it. Also, make sure, that there is no download manager programs, auto-updates or auto-defragmentation schedules are active. Try to remove all unknown, unused, NON-WINDOWS applications. Be careful about removing everything in sight. Googling the name of application could give you the reason its on your PC.<br /><br />
 
-                            <p>Something else to consider:</p>
+                            Something else to consider:<br /><br />
 
-                            <p>DPI(CPI):<br>
+                            DPI(CPI):<br /><br />
                             - DPI means dots per inch. Describes, how often your mouse would capture an image under it, to recalculate your movement, based on information it get.
-                            Most of the low-end, low price mices are around 400-450 dpi, which is just enough to deal with 1024x768\1280x1024 screens. If your screen's resolution is even higher, then you need a mouse that can handle up to 800 DPI or higher.</p>
+                            Most of the low-end, low price mices are around 400-450 dpi, which is just enough to deal with 1024x768\1280x1024 screens. If your screen's resolution is even higher, then you need a mouse that can handle up to 800 DPI or higher.<br /><br />
 
-                            <p>Vsync - Cuts off some extra FPS to stabilize your gameplay. Even though higher fps is always better.. not in our case. Having too much fps mean there will be moments, where 300fps game can drop down to 40 fps, and your mouse control will be drastically affected. For me, I've found fps roofs of 250, 150 and 120 to be the most useful, leaving no room for tearing on my 75hz monitor.
-                            Why 40fps and 300fps mouse control differs? Because, at 40fps, your game "takes into account" only 40 frames of your mouse movements per each second.</p>
+                            Vsync - Cuts off some extra FPS to stabilize your gameplay. Even though higher fps is always better.. not in our case. Having too much fps mean there will be moments, where 300fps game can drop down to 40 fps, and your mouse control will be drastically affected. For me, I've found fps roofs of 250, 150 and 120 to be the most useful, leaving no room for tearing on my 75hz monitor.
+                            Why 40fps and 300fps mouse control differs? Because, at 40fps, your game "takes into account" only 40 frames of your mouse movements per each second.<br /><br />
 
-                            <p>Mousepad - Yes. Some mice aren't intended to be used on certain surfaces.
+                            Mousepad - Yes. Some mice aren't intended to be used on certain surfaces.
                             - You can do an easy trick to see, if your mouse performs best at surface you've used to work on:
                             1. Open any application/game, where you have full control over rotating the view.
                             2. Remove all the possible mouse accelerations within settings of Windows, mouse driver and game\program.
                             3. Now, move your mouse fast to right, then slowly back to left, to the same position you've started from. Do not pick up your mouse nor move it too far away from the starting point.
                             4. Do that 5-6 times more, repeating the same move, then move it back to the start position.
                             Is your looking spot in the game\3d program now too far away from where it been? If yes - then there is an issue with your mouse, game, system or a surface, you’re using your mouse on.
-                            - Most mice are unable to move on glass. Razor Abyssus is unable to move on my plastic A4Tech mousepad. It was okay for the first time, but now, over the time, plastic cover got smoother at the center, so once Abyssus get there, it couldn't “see” any movement. Problem is - Abyssus is optical. Other mouse like Logitech G5 is laser-based, and works on that surface just well.</p>
+                            - Most mice are unable to move on glass. Razor Abyssus is unable to move on my plastic A4Tech mousepad. It was okay for the first time, but now, over the time, plastic cover got smoother at the center, so once Abyssus get there, it couldn't “see” any movement. Problem is - Abyssus is optical. Other mouse like Logitech G5 is laser-based, and works on that surface just well.<br /><br />
 
-                            <p>There were reports about some series of mice being defective. Some issues could be fixed by updating your drivers\firmware. For an additional information for that case you should visit your developer's website. You could even exchange the faulty mice for a better version, or exchange it to a whole different series. But first, make sure, that this is a warranty case, contact your mouse developer's support line, or via email.</p>
+                            There were reports about some series of mice being defective. Some issues could be fixed by updating your drivers\firmware. For an additional information for that case you should visit your developer's website. You could even exchange the faulty mice for a better version, or exchange it to a whole different series. But first, make sure, that this is a warranty case, contact your mouse developer's support line, or via email.<br /><br />
 
-                            <p>In case of system problems, you must be sure, that you only have 1 mouse driver installed. Make sure no viruses are ruining your PC performance. All the unnecessary programs, addons and plugins should be found and deleted as well. Make sure no acceleration nor Enchanced pointer precision are enabled. Sadly, some series of mices could have built in, unremovable acceleration, as well as a bunch of other unfixable issues.</p>
+                            In case of system problems, you must be sure, that you only have 1 mouse driver installed. Make sure no viruses are ruining your PC performance. All the unnecessary programs, addons and plugins should be found and deleted as well. Make sure no acceleration nor Enchanced pointer precision are enabled. Sadly, some series of mices could have built in, unremovable acceleration, as well as a bunch of other unfixable issues.</p>
                         </div>
                     </div>
                 </div>
