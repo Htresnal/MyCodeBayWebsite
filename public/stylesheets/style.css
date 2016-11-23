@@ -6,6 +6,11 @@
     box-sizing:border-box;
 }
 
+a 
+{
+    color:#9B9A5B;
+}
+
 body 
 {
   margin: 0;
@@ -13,17 +18,21 @@ body
   background-color: #94CAE8;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  color: #311c00;
+  color: #4b6775;
 }
 
 h1 
 {
     font-size: 2em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 h2
 {
     font-size: 1.6em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 #wrapper
@@ -69,7 +78,6 @@ h2
   margin: 0 0 2em 0.45em;
   padding: 0 1.40em 0 1.40em;
   width: 79%;
-  background-color: burlywood;
 }
  
 #menu ul {
@@ -116,29 +124,30 @@ h2
 
 .article .header
 {
-    font-size:1.21em;
+    font-size:1.31em;
+    margin: 0 0 0 0;
+    color:#455e6b;
 }
 
 .article .description
 {
-  font-size: 0.85em;
-  font-weight: lighter;
-  float: right;
-  clear: both;
+  text-transform: uppercase;
+  font-size: 0.95em;
 }
 
 .article .text
 {
-  line-height: 1.55em;
+  line-height: 1.8em;
 }
 
 .article #btn_reveal
 {
-  color:fac;
+  color:#455e6b;
   font-size: 0.85em;
-  font-weight: lighter;
   float: right;
-    margin: 0 2.25em 0 0;
+  margin: 0 2.5% 0 0;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .article .reveal
