@@ -2,59 +2,56 @@
 
 body 
 {
-    margin: 0;
-    padding: 0;
-    background-color: #dcdcdc;
-    font-family: 'Roboto', sans-serif;
-	font-size: 1em;
-	color: #311c00;
+  margin: 0;
+  padding: 0;
+  background-color: #dcdcdc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #311c00;
 }
 
 #wrapper
 {
-    display:block;
-    position:relative;
-    min-width: 802px;
-    margin: 0 auto;
-    padding: 0 auto;
+  min-width: 802px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 #main
 {
-    width: 802px;
-	margin: 0 auto;
-    padding: 0 0 0 0;
+  width: 802px;
+  margin: 0 auto;
 }
 
 #menu
 {
-    display: inline-block;
-    float:left;
-    width:200px;
-    background-color: antiquewhite;
+  display:inline-block;
+  float: left;
+  width: 20%;
+  background-color: antiquewhite;
 }
 
 #menu >a:hover
 {
-    color:white;
-    background: black;
+  color:white;
+  background: black;
 }
 
 #banner
 {
-    height: 180px;
-    margin: 0 0 0.45em 0;
-    background-image: url("../img/banner.png");
-    background-color: bisque;
-    background-repeat: no-repeat;
+  height: 180px;
+  margin: 0 0 0.45em 0;
+  background-image: url("../img/banner.png");
+  background-color: bisque;
+  background-repeat: no-repeat;
 }
 
 #content
 {
-    display: inline-block;
-    margin: 0 0 2em 0.45em;
-    width: 594px;
-    background-color: burlywood;
+  display: inline-block;
+  margin: 0 0 2em 0.45em;
+  width: 79%;
+  background-color: burlywood;
 }
  
 #menu ul {
@@ -91,83 +88,88 @@ body
 
 /*<Articles content>*/
 
-#article
+.article
 {
-    display:block;
-    padding 0 0 0 0;
+  display:block;
 }
 
-#article #header
+.article .header
 {
-    
+    font-size:1.21em;
 }
 
-#article #description
+.article .description
 {
-    font-size: 0.85em;
-    font-weight: lighter;
-    text-align: right;
-    font-style: italic;
+  font-size: 0.85em;
+  font-weight: lighter;
+  text-align: right;
+  font-style: italic;
 }
 
-#article #text
+.article .text
 {
-    
 }
 
-#article #reveal
+.article #btn_reveal
 {
-    font-size: 0.85em;
-    font-weight: lighter;
-    text-align: right;
+  font-size: 0.85em;
+  font-weight: lighter;
+  text-align: right;
+  font-style: italic;
+  color:fac;
+}
+
+.article .reveal
+{
+    display: none;
 }
 
 /*</Articles content>*/
 
 /*<Program content>*/
 
-#program
+.program
 {
-    display:block;
-    padding 0 0 0 0;
+  display:block;
+  padding 0 0 0 0;
 }
 
-#program #header
+.program .header
 {
-    margin: 0 auto;
-    line-height: 2em;
-    background: #333333;
-    color:azure;
-    padding: 0 0 0 2em;
-    font-size: 1.15em;
+  margin: 0 auto;
+  line-height: 2em;
+  background: #333333;
+  color:azure;
+  padding: 0 0 0 2em;
+  font-size: 1.15em;
 }
 
-#program #img
+.program .img
 {
-    display:inline;
-    float: left;
-    padding: 0 0.75em 0.5em 0;
+  display:inline;
+  float: left;
+  padding: 0 0.75em 0.5em 0;
 }
 
-#program #description
+.program .description
 {
-    display: inline;
-    font-size: 0.85em;
-    font-weight: normal;
-    font-style: italic;
+  display: inline;
+  font-size: 0.85em;
+  font-weight: normal;
+  font-style: italic;
 }
 
-#program #text
+.program .text
 {
-    clear: left;
-    font-size: 1.05em;
+  clear: left;
+  font-size: 1.05em;
 }
 
-#program #reveal
+.program .reveal
 {
-    font-size: 1.05em;
-    font-weight: lighter;
-    text-align: right;
+  font-size: 1.05em;
+  font-weight: lighter;
+  text-align: right;
 }
 
 /*</Program content>*/
@@ -175,15 +177,15 @@ body
 
 #footer
 {
-    background-color: darkgoldenrod;
-    clear:left;
-    text-align: right;
-    padding: 0 0 0.1em 0;
+  background-color: darkgoldenrod;
+  clear:left;
+  text-align: right;
+  padding: 0 0 0.1em 0;
 }
 
 #footer >p
 {
-    font-size: 2em;
-    line-height: 0em;
-    padding: 30px 30px 0 0;
+  font-size: 2em;
+  line-height: 0em;
+  padding: 30px 30px 0 0;
 }
