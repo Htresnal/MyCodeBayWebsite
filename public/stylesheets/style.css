@@ -25,7 +25,7 @@ body
 
 #menu
 {
-  display:inline-block;
+  display:block;
   float: left;
   width: 20%;
   background-color: antiquewhite;
@@ -48,7 +48,8 @@ body
 
 #content
 {
-  display: inline-block;
+  display: block;
+  float: left;
   margin: 0 0 2em 0.45em;
   width: 79%;
   background-color: burlywood;
@@ -91,6 +92,7 @@ body
 .article
 {
   display:block;
+  clear: both;
 }
 
 .article .header
@@ -102,8 +104,9 @@ body
 {
   font-size: 0.85em;
   font-weight: lighter;
-  text-align: right;
   font-style: italic;
+  float: right;
+  clear: both;
 }
 
 .article .text
@@ -112,11 +115,12 @@ body
 
 .article #btn_reveal
 {
+  color:fac;
   font-size: 0.85em;
   font-weight: lighter;
-  text-align: right;
   font-style: italic;
-  color:fac;
+  float: right;
+    margin: 0 2.25em 0 0;
 }
 
 .article .reveal
