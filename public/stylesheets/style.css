@@ -1,13 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+
 body 
 {
   margin: 0;
   padding: 0;
-  background-color: #dcdcdc;
+  background-color: #94CAE8;
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 13px;
   color: #311c00;
+}
+
+h1 
+{
+    font-size: 2em;
+}
+
+h2
+{
+    font-size: 1.6em;
 }
 
 #wrapper
@@ -51,6 +67,7 @@ body
   display: block;
   float: left;
   margin: 0 0 2em 0.45em;
+  padding: 0 1.40em 0 1.40em;
   width: 79%;
   background-color: burlywood;
 }
@@ -62,7 +79,8 @@ body
 }
  
 #menu li {
-  font: 200 25px/1.5 Helvetica, Verdana, sans-serif;
+  font: 200 1.38em Helvetica, Verdana, sans-serif;
+  line-height: 2em;
   border-bottom: 1px solid #ccc;
 }
  
@@ -72,7 +90,7 @@ body
  
 #menu li a {
   text-decoration: none;
-  color: #000;
+  color: #54829B;
   display: block;
  
   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
@@ -83,7 +101,7 @@ body
 }
  
 #menu li a:hover {
-  font-size: 35px;
+  font-size: 1.55em;
   background: #f6f6f6;
 }
 
@@ -91,6 +109,7 @@ body
 
 .article
 {
+  margin: 0 0 4em 0;
   display:block;
   clear: both;
 }
@@ -104,13 +123,13 @@ body
 {
   font-size: 0.85em;
   font-weight: lighter;
-  font-style: italic;
   float: right;
   clear: both;
 }
 
 .article .text
 {
+  line-height: 1.55em;
 }
 
 .article #btn_reveal
@@ -118,7 +137,6 @@ body
   color:fac;
   font-size: 0.85em;
   font-weight: lighter;
-  font-style: italic;
   float: right;
     margin: 0 2.25em 0 0;
 }
@@ -142,7 +160,7 @@ body
 {
   margin: 0 auto;
   line-height: 2em;
-  background: #333333;
+  background: #54829B;
   color:azure;
   padding: 0 0 0 2em;
   font-size: 1.15em;
@@ -160,13 +178,13 @@ body
   display: inline;
   font-size: 0.85em;
   font-weight: normal;
-  font-style: italic;
 }
 
 .program .text
 {
   clear: left;
   font-size: 1.05em;
+  line-height: 1.55em;
 }
 
 .program .reveal
@@ -181,7 +199,7 @@ body
 
 #footer
 {
-  background-color: darkgoldenrod;
+  background-color: #B5B361;
   clear:left;
   text-align: right;
   padding: 0 0 0.1em 0;
