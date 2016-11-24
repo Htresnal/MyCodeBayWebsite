@@ -8,14 +8,14 @@
 
 a 
 {
-    color:#506D7C;
+    color:#606D7C;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:hover
 {
-    color:#8799ad;
+    color:#97797d;
     text-decoration:underline;
 }
 
@@ -140,7 +140,7 @@ h2
 .article .description
 {
   text-transform: uppercase;
-  font-size: 0.95em;
+  font-size: 0.85em;
 }
 
 .article .text
@@ -150,12 +150,18 @@ h2
 
 .article #btn_reveal
 {
-  color:#455e6b;
+  color:#606D7C;
   font-size: 0.85em;
   float: right;
   margin: 0 2.5% 0 0;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.article #btn_reveal:hover
+{
+  color:#97797d;
+  text-decoration:underline;
 }
 
 .article .reveal
@@ -177,7 +183,7 @@ h2
 {
   margin: 0 auto;
   line-height: 2em;
-  background: #54829B;
+  background: #42677a;
   color:azure;
   padding: 0 0 0 2em;
   font-size: 1.15em;
