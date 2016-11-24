@@ -8,14 +8,14 @@
 
 a 
 {
-    color:#606D7C;
+    color:#78645a;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:hover
 {
-    color:#97797d;
+    color:#b45a5a;
     text-decoration:underline;
 }
 
@@ -56,20 +56,6 @@ h2
   margin: 0 auto;
 }
 
-#menu
-{
-  display:block;
-  float: left;
-  width: 20%;
-  background-color: antiquewhite;
-}
-
-#menu >a:hover
-{
-  color:white;
-  background: black;
-}
-
 #banner
 {
   height: 180px;
@@ -87,7 +73,15 @@ h2
   padding: 0 1.40em 0 1.40em;
   width: 79%;
 }
- 
+
+#menu
+{
+  display:block;
+  float: left;
+  width: 20%;
+  background-color: #ffe5b2;
+}
+
 #menu ul {
   list-style-type: none;
   margin: 0;
@@ -119,6 +113,16 @@ h2
 #menu li a:hover {
   font-size: 1.55em;
   background: #f6f6f6;
+}
+
+#menu li #nav_selected
+{
+    font-size: 1.55em;
+    background: #f6f6f6;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
 }
 
 /*<Articles content>*/
@@ -182,11 +186,12 @@ h2
 .program .header
 {
   margin: 0 auto;
-  line-height: 2em;
+  line-height: 1.85em;
+  font-family: "Corbel";
   background: #42677a;
   color:azure;
   padding: 0 0 0 2em;
-  font-size: 1.15em;
+  font-size: 1.60em;
 }
 
 .program .img
@@ -199,7 +204,7 @@ h2
 .program .description
 {
   display: inline;
-  font-size: 1em;
+  line-height: 1.43em;
   font-weight: normal;
 }
 
@@ -229,7 +234,7 @@ h2
 
 #footer
 {
-  background-color: #B5B361;
+  background-color: #ffe5b2;
   clear:left;
   text-align: right;
   padding: 0 0 0.1em 0;

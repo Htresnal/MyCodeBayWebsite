@@ -3,13 +3,12 @@
 <head>
 <% include ../partials/header.ejs %>
 </head>
-<body>
+<body onload="setCurrentMenu();">
     <div id="wrapper">
         <div id="main">
             <% include ../partials/banner.ejs %>
             <% include ../partials/nav.ejs %>
             <div id="content">
-                <h1>My links</h1>
                 <div id="box_text">
                     <h2>C++ related links:</h2>
                     <p><a href="https://www.youtube.com/user/CppCon">CppCon Youtube Channel</a><br><br>
@@ -45,5 +44,6 @@
         </div>
         <% include ../partials/copyright.ejs %>
     </div>
+    <script src="javascripts/menuSelector.js"></script>
 </body>
 </html>

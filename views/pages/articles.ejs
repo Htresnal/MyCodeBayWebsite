@@ -3,13 +3,12 @@
 <head>
 <% include ../partials/header.ejs %>
 </head>
-<body>
+<body onload="setCurrentMenu();">
     <div id="wrapper">
         <div id="main">
             <% include ../partials/banner.ejs %>
             <% include ../partials/nav.ejs %>
             <div id="content">
-                <h1>Articles</h1>
                 <div class="article">
                     <div class="header">
                         <p>Reasons behind bad PC performance</p>
@@ -18,7 +17,7 @@
                         <p>Posted at 15:36 20.11.16 by Htresnal</p>
                     </div>
                     <div class="text">
-                        <p>    I’m pretty obsessed with PC performance problems, and it begun as the reason for my long time investigation on the reasons why a PC may lag, stutter, freeze, or misbehave in any other way possible.
+                        <p>    I’m pretty obsessed with PC performance problems. It begun as the reason for my long time investigation on why a PC may lag, stutter, freeze, or misbehave somehow.
                         As anything that has something to do with PC, its always complex, multilayered, chain-connected with each other.
                         That’s why I’ve made a lookup list of possible problems. I’ve also split it in categories, corresponding with hardware, software and CPU\bottleneck overload problems.</p>
                         <a href="#!" id="btn_reveal" onclick="showArticle(this)">SHOW FULL ARTICLE</a>
@@ -114,6 +113,6 @@ function showArticle(callerBtn)
     }
 }
 </script>    
-
+<script src="javascripts/menuSelector.js"></script>
 </body>
 </html>

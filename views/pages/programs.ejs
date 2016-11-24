@@ -3,13 +3,12 @@
 <head>
 <% include ../partials/header.ejs %>
 </head>
-<body>
+<body onload="setCurrentMenu();">
     <div id="wrapper">
         <div id="main">
             <% include ../partials/banner.ejs %>
             <% include ../partials/nav.ejs %>
             <div id="content">
-                <h1>My programs</h1>
                 <div class="program">
                     <div class="header">
                         <p>Ultra long arithmetics</p>
@@ -72,5 +71,6 @@
         </div>
         <% include ../partials/copyright.ejs %>
     </div>
+    <script src="javascripts/menuSelector.js"></script>
 </body>
 </html>

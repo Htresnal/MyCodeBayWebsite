@@ -3,7 +3,7 @@
 <head>
 <% include ../partials/header.ejs %>
 </head>
-<body>
+<body onload="setCurrentMenu();">
     <div id="wrapper">
         <div id="main">
             <% include ../partials/banner.ejs %>
@@ -18,5 +18,6 @@
         </div>
         <% include ../partials/copyright.ejs %>
     </div>
+    <script src="javascripts/menuSelector.js"></script>
 </body>
 </html>
