@@ -59,9 +59,8 @@ h2
 #banner
 {
   height: 180px;
-  margin: 0 0 0.45em 0;
+  margin: 1em 0 0.45em 0;
   background-image: url("../img/banner.png");
-  background-color: bisque;
   background-repeat: no-repeat;
 }
 
@@ -79,7 +78,6 @@ h2
   display:block;
   float: left;
   width: 20%;
-  background-color: #ffe5b2;
 }
 
 #menu ul {
@@ -234,7 +232,7 @@ h2
 
 #footer
 {
-  background-color: #ffe5b2;
+  background-color: #ffffac;
   clear:left;
   text-align: right;
   padding: 0 0 0.1em 0;
