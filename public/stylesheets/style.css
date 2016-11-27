@@ -27,6 +27,7 @@ body
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   color: #4b6775;
+  line-height: 1.8em;
 }
 
 h1 
@@ -68,8 +69,9 @@ h2
 {
   display: block;
   float: left;
-  margin: 0 0 2em 0.45em;
+  margin: 2em 0 2em 0.45em;
   padding: 0 1.40em 0 1.40em;
+    
   width: 79%;
 }
 
@@ -89,11 +91,6 @@ h2
 #menu li {
   font: 200 1.38em Helvetica, Verdana, sans-serif;
   line-height: 2em;
-  border-bottom: 1px solid #ccc;
-}
- 
-#menu li:last-child {
-  border: none;
 }
  
 #menu li a {
@@ -127,7 +124,6 @@ h2
 
 .article
 {
-  margin: 0 0 4em 0;
   display:block;
   clear: both;
 }
@@ -135,7 +131,6 @@ h2
 .article .header
 {
     font-size:1.31em;
-    margin: 0 0 0 0;
     color:#455e6b;
 }
 
@@ -152,18 +147,9 @@ h2
 
 .article #btn_reveal
 {
-  color:#606D7C;
   font-size: 0.85em;
   float: right;
   margin: 0 2.5% 0 0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.article #btn_reveal:hover
-{
-  color:#97797d;
-  text-decoration:underline;
 }
 
 .article .reveal
@@ -178,7 +164,6 @@ h2
 .program
 {
   display:block;
-  padding 0 0 0 0;
 }
 
 .program .header
@@ -210,7 +195,7 @@ h2
 {
   clear: left;
   font-size: 1.05em;
-  line-height: 1.55em;
+  line-height: 1.8em;
 }
 
 .program .reveal
@@ -235,12 +220,11 @@ h2
   background-color: #ffffac;
   clear:left;
   text-align: right;
-  padding: 0 0 0.1em 0;
+  padding: 0.1em 2em 0.1em 0;
 }
 
 #footer >p
 {
   font-size: 2em;
   line-height: 0em;
-  padding: 30px 30px 0 0;
 }
