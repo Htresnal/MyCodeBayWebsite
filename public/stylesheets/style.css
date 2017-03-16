@@ -143,6 +143,7 @@ h2
 
 .article .text
 {
+  clear:both;
   line-height: 1.8em;
 }
 
