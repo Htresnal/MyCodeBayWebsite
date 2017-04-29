@@ -18,16 +18,26 @@ app.get('/', function(request, response) {
 	  if (err){
         return console.error('error fetching client from pool', err);
 	  }
-	  client.query('SELECT * FROM MyTable', function(err, result) {
+	  client.query('SELECT * FROM "MyTable"', function(err, result) {
 	    if (err){
 	      return console.error('error fetching client from pool', err);
 	    }
-	    res.render('index', {MyTable: result.rows});
+	    console.log(result.rows[0]);
+	    //response.render('pages/index', {MyTable: result.rows});
 	  });
 	});
 
+/*
+  client
+    .query('SELECT table_schema,table_name FROM information_schema.tables;')
+    .on('row', function(row) {
+      console.log(JSON.stringify(row));
+    });
+});
+*/
 
-  //response.render('pages/index');
+
+  response.render('pages/index');
 });
 
 app.get('/index', function(request, response) {
