@@ -1,17 +1,6 @@
 var express = require('express');
 var pg = require('pg');
-
 pg.defaults.ssl = true;
-pg.connect(process.env.DATABASE_URL, function(err, client) {
-  if (err) throw err;
-  console.log('Connected to postgres! Getting schemas...');
-
-  client
-    .query('SELECT table_schema,table_name FROM information_schema.tables;')
-    .on('row', function(row) {
-      console.log(JSON.stringify(row));
-    });
-});
 
 var app = express();
 
@@ -25,7 +14,20 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+	pg.connect(process.env.DATABASE_URL, function(err, client) {
+	  if (err){
+        return console.error('error fetching client from pool', err);
+	  }
+	  client.query('SELECT * FROM MyTable', function(err, result) {
+	    if (err){
+	      return console.error('error fetching client from pool', err);
+	    }
+	    res.render('index', {MyTable: result.rows});
+	  });
+	});
+
+
+  //response.render('pages/index');
 });
 
 app.get('/index', function(request, response) {
